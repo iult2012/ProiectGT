@@ -8,6 +8,7 @@ const TypesRouter = require('./routes/types');
 const { Auto } = require('./models/auto');
 const app = express();
 
+
 mongoose.connect(process.env.MONGO_URI);
 console.log(mongoose.connection.readyState);
 const cors = require('cors');
